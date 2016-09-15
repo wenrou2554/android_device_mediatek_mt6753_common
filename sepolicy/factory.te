@@ -145,3 +145,4 @@ allow factory fuse:dir mounton;
 allow factory vmodem_device:chr_file { read write ioctl open };
 # camera fix for CM 12.1
 allow factory DW9761AF_device:chr_file { read write ioctl open };
+allow factory BU64245_device:chr_file { read write ioctl open };
