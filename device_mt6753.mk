@@ -137,16 +137,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
      	$(LOCAL_PATH)/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml 
 
-# FM Radio
-PRODUCT_PACKAGES += \
-     	FmRadio \
-     	libfmjni \
-	libfmmt6620 \
-        libfmmt6628 \
-        libfmmt6627 \
-        libfmmt6630 \
-        libfmcust 
-
 # Media	
 PRODUCT_COPY_FILES += \
     	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
