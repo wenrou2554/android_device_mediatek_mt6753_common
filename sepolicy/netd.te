@@ -115,6 +115,5 @@ allow netd isolated_app:fd use;
 
 #============= netd ==============
 allow netd radio_tmpfs:file write;
-
-
+allow netd unlabeled:file { read open getattr };
 

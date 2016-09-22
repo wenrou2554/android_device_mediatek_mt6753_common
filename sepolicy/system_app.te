@@ -156,4 +156,5 @@ dontaudit system_app untrusted_app_tmpfs:file write;
 # Purpose: It's not normal behavior, that system_app want to access radio_file_data
 # Package: android.ui
 dontaudit system_app radio_data_file:dir search;
+allow system_app sysfs_keypad_file:file { read write getattr ioctl open };
 

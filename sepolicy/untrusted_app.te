@@ -44,3 +44,5 @@ allow untrusted_app proc_mtktz:dir search;
 allow untrusted_app proc_mtktz:file read;
 allow untrusted_app proc_mtktz:file open;
 allow untrusted_app proc_mtktz:file getattr;
+allow untrusted_app unlabeled:file getattr;
+
