@@ -73,6 +73,8 @@ PRODUCT_PACKAGES += \
     	wifi_hal \
     	libwpa_client \
     	hostapd \
+        hostapd.accept \
+        hostapd.deny \
     	hostapd_cli \
     	dhcpcd.conf \
     	wpa_supplicant \
