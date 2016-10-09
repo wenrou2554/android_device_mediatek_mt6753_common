@@ -135,9 +135,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
-	ro.secure=0 \
+	ro.secure=1 \
 	ro.allow.mock.location=1 \
-	ro.debuggable=1 \
+	ro.debuggable=0 \
 	ro.adb.secure=1 \
 	persist.service.acm.enable=0 \
 	ro.oem_unlock_supported=1 \
