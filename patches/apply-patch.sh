@@ -3,7 +3,6 @@ cd ../../../..
 cd frameworks/av
 git apply -v ../../device/mediatek/mt6753_common/patches/framework_av/0001-libmedia-stub-out-MTK-specific-bits-audio-working.patch
 git apply -v ../../device/mediatek/mt6753_common/patches/framework_av/0002-camera.patch
-git apply -v ../../device/mediatek/mt6753_common/patches/framework_av/0003-frameworks_av_fmradio_patch.patch
 git apply -v ../../device/mediatek/mt6753_common/patches/framework_av/0001_engineering_mode_audio_settings_frameworks_av.patch
 git apply -v ../../device/mediatek/mt6753_common/patches/framework_av/frameworks_av_videorecording_fix.patch
 cd ../..
