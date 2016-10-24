@@ -134,10 +134,13 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
 	$(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
+# Set default player to AwesomePlayer
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.media.use-awesome=true
+
 ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.secure=1 \
 	ro.allow.mock.location=1 \
-	ro.debuggable=0 \
+	ro.debuggable=1 \
 	ro.adb.secure=1 \
 	persist.service.acm.enable=0 \
 	ro.oem_unlock_supported=1 \
