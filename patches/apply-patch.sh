@@ -19,6 +19,7 @@ git apply -v ../../../device/mediatek/mt6753_common/patches/packages_apps_Settin
 cd ../../..
 cd frameworks/opt/telephony
 git apply -v ../../../device/mediatek/mt6753_common/patches/framework_opt_telephony/0001-Update-for-mtk.patch
+git apply -v ../../../device/mediatek/mt6753_common/patches/framework_opt_telephony/0002_mobile_data_patch_mt6753.patch
 cd ../../..
 cd hardware/libhardware
 git apply -v ../../device/mediatek/mt6753_common/patches/hardware_libhardware/fix-gps-light-audio.patch
