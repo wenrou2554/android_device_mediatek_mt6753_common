@@ -30,9 +30,9 @@ cd ../..
 cd packages/services/Telephony
 git apply -v ../../../device/mediatek/mt6753_common/patches/packages_services_telephony/NeedsFakeIccid.patch
 cd ../../..
-cd system/core
-git apply -v ../../device/mediatek/mt6753_common/patches/system_core/prevent-MTK-audio-and-silead-fingerprint-libs-from-spamming-log.patch
-cd ../..
+#cd system/core
+#git apply -v ../../device/mediatek/mt6753_common/patches/system_core/prevent-MTK-audio-and-silead-fingerprint-libs-from-spamming-log.patch
+#cd ../..
 cd system/netd
 git apply -v ../../device/mediatek/mt6753_common/patches/system_netd/hotpost-fix.patch
 cd ../..
