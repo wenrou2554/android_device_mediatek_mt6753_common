@@ -1,0 +1,28 @@
+From cf2c4d02ee3a4b73eb6ca340867bcbac61fc45e2 Mon Sep 17 00:00:00 2001
+From: Dmitry Smirnov <divis1969@gmail.com>
+Date: Sun, 20 Mar 2016 11:41:12 +0300
+Subject: [PATCH] Allow USB settings even if USB is reported as not connected
+
+Change-Id: I859d7d7e2d395499480d844f4edeaa198ef8fbba
+---
+ src/com/android/settings/deviceinfo/UsbSettings.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/com/android/settings/deviceinfo/UsbSettings.java b/src/com/android/settings/deviceinfo/UsbSettings.java
+index 3528383..4151894 100644
+--- a/src/com/android/settings/deviceinfo/UsbSettings.java
++++ b/src/com/android/settings/deviceinfo/UsbSettings.java
+@@ -80,8 +80,9 @@ public class UsbSettings extends SettingsPreferenceFragment {
+             if (action.equals(UsbManager.ACTION_USB_STATE)) {
+                mUsbAccessoryMode = intent.getBooleanExtra(UsbManager.USB_FUNCTION_ACCESSORY, false);
+                 Log.e(TAG, "UsbAccessoryMode " + mUsbAccessoryMode);
++                String function = mUsbManager.getDefaultFunction();
+                 boolean connected = intent.getExtras().getBoolean(UsbManager.USB_CONNECTED);
+-                if (!connected) {
++                if (!connected && !UsbManager.USB_FUNCTION_CHARGING.equals(function)) {
+                     Toast.makeText(getActivity(), R.string.usb_not_connected,
+                                    Toast.LENGTH_SHORT).show();
+                     finish();
+-- 
+2.9.3
+

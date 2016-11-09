@@ -16,6 +16,7 @@ git apply -v ../../device/mediatek/mt6753_common/patches/framework_base/0001_eng
 cd ../..
 cd packages/apps/Settings/
 git apply -v ../../../device/mediatek/mt6753_common/patches/packages_apps_Settings/0001-multisim.patch
+git apply -v ../../../device/mediatek/mt6753_common/patches/packages_apps_Settings/0002-Allow-USB-settings-even-if-USB-is-reported-as-not-co.patch
 cd ../../..
 cd frameworks/opt/telephony
 git apply -v ../../../device/mediatek/mt6753_common/patches/framework_opt_telephony/0001-Update-for-mtk.patch
