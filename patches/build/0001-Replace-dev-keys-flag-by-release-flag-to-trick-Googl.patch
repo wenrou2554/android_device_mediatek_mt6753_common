@@ -1,0 +1,27 @@
+From d7fd2b84d90789f3020bc6aecf19dd7ba7d222e7 Mon Sep 17 00:00:00 2001
+From: Moyster <oysterized@gmail.com>
+Date: Sat, 19 Nov 2016 21:26:22 +0100
+Subject: [PATCH] Replace dev-keys flag by release-flag to trick Google Apps
+ like Android Wear
+
+Change-Id: Icc37b9c7a31704f0a26dd37f3d7a74c21ea97d09
+---
+ core/Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/core/Makefile b/core/Makefile
+index 9ab196a..52aa385 100644
+--- a/core/Makefile
++++ b/core/Makefile
+@@ -111,7 +111,7 @@ endif
+ ifeq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),build/target/product/security/testkey)
+ BUILD_KEYS := test-keys
+ else
+-BUILD_KEYS := dev-keys
++BUILD_KEYS := release-keys
+ endif
+ BUILD_VERSION_TAGS += $(BUILD_KEYS)
+ BUILD_VERSION_TAGS := $(subst $(space),$(comma),$(sort $(BUILD_VERSION_TAGS)))
+-- 
+2.9.3
+

@@ -35,6 +35,9 @@ cd ../../..
 #cd system/core
 #git apply -v ../../device/mediatek/mt6753_common/patches/system_core/prevent-MTK-audio-and-silead-fingerprint-libs-from-spamming-log.patch
 #cd ../..
+cd build/
+git apply -v ../device/mediatek/mt6753_common/patches/build/0001-Replace-dev-keys-flag-by-release-flag-to-trick-Googl.patch
+cd ..
 cd system/netd
 git apply -v ../../device/mediatek/mt6753_common/patches/system_netd/hotpost-fix.patch
 cd ../..

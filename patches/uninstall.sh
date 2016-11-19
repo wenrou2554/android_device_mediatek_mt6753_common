@@ -4,7 +4,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="frameworks/av frameworks/base frameworks/opt/telephony hardware/libhardware hardware/libhardware_legacy packages/apps/Settings packages/services/telephony system/core system/netd"
+dirs="build frameworks/av frameworks/base frameworks/opt/telephony hardware/libhardware hardware/libhardware_legacy packages/apps/Settings packages/services/telephony system/core system/netd"
 
 VENDOR=meizu
 DEVICE=m2note
